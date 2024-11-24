@@ -1,0 +1,19 @@
+msg=input("enter message:")
+count=-1
+new=""
+for i in msg:
+    new+=i
+    if i=='0':
+        if count==-1:
+            count=0
+    if i=='1':
+        if count>-1 and count<5:
+            count+=1
+        if count==5:
+            new+='0'
+            count=0
+
+print(new)
+            
+            
+    
